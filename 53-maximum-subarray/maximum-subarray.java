@@ -1,13 +1,13 @@
 import java.util.*;
 class Solution {
     public int maxSubArray(int[] nums) {
-        int res=nums[0];
-        int maxEnd=nums[0];
+        int sum=nums[0];
+        int max=nums[0];
 
         for(int i=1;i<nums.length;i++){
-            maxEnd=Math.max(maxEnd+nums[i],nums[i]);
-            res=Math.max(res,maxEnd);
+            max=Math.max(max+nums[i],nums[i]);
+            sum=Math.max(sum,max);
         }
-        return res;
+        return sum;
     }
 }
