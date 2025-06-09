@@ -10,7 +10,7 @@ class Solution {
                     maxProfit = profit;
                 }
             }
-            if( buy > sell ){
+            else{
                 buy = sell;
             }
         }
