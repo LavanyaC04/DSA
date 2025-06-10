@@ -47,9 +47,9 @@ This repository is primarily for my personal learning, but feel free to fork it,
 
 ---
 
-> 📅 **Started on:** `June 4, 2025`
-> 🛠️ Maintained with passion and curiosity  
-> 💬 Open to feedback, suggestions, and collaboration
-> 📈 **#100DaysOfCode** in progress...
+- 📅 **Started on:** `June 4, 2025`
+- 🛠️ Maintained with passion and curiosity  
+- 💬 Open to feedback, suggestions, and collaboration
+- 📈 **#100DaysOfCode** in progress...
 
 **Thank you for visiting! Happy coding! 💻🔥**
