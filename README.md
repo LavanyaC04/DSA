@@ -20,7 +20,7 @@ This repo serves as my personal DSA journal. It includes solutions to problems I
 ## 📌 Platforms Used
 
 - [LeetCode](https://leetcode.com/)
-- [https://www.apnacollege.in/home-post-login))](https://www.apnacollege.in/home-post-login
+- [Apna college website](https://www.apnacollege.in/home-post-login))](https://www.apnacollege.in/home-post-login)
 ---
 
 ## 🚀 My Goal
