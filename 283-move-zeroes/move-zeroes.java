@@ -7,7 +7,8 @@ class Solution {
         // Step 2: Copy non-zero elements to temp[]
         for (int i = 0; i < n; i++) {
             if (nums[i] != 0) {
-                temp[index++] = nums[i];
+                temp[index] = nums[i];
+                index++;
             }
         }
 
