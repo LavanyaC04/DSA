@@ -8,7 +8,7 @@ class Solution {
 
         double ans = 1;
         while (N > 0) {
-            if ((N & 1) == 1) {
+            if ((N & 1) != 0) {
                 ans *= x;
             }
             x *= x;
