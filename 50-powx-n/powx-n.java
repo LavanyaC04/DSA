@@ -1,6 +1,6 @@
 class Solution {
     public double myPow(double x, int n) {
-        long N = n; // to handle Integer.MIN_VALUE safely
+        long N = n; 
         if (N < 0) {
             x = 1 / x;
             N = -N;
