@@ -5,7 +5,7 @@ class Solution {
         for (int i = 0 ; i < n ; i++) {
             xor = xor ^ nums[i];
         }
-        int rightmost = xor & -xor;
+        int rightmost = (xor & (xor - 1)) ^ xor;
         int bucket1 = 0, bucket2 = 0;
         for (int i = 0 ; i < n ; i++) {
             if ((nums[i] & rightmost) != 0) {
