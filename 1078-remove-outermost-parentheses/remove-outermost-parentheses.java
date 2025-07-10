@@ -1,19 +1,18 @@
 class Solution {
     public String removeOuterParentheses(String s) {
         String result = "";
-        Stack<Character> stack = new Stack<>();
+        int counter = 0;
         for(int i = 0 ; i < s.length() ; i++){
             char ch = s.charAt(i);
             if(ch == '('){
-                
-                if(!stack.isEmpty()){
+                if(counter > 0){
                     result+=ch;
                 }
-                stack.push(ch);
+                counter++;
             }
             else{
-                stack.pop();
-                if(!stack.isEmpty()){
+                counter--;
+                if(counter > 0){
                     result+=ch;
                 }
             }
