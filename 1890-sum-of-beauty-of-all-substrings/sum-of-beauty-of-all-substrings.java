@@ -18,8 +18,6 @@ class Solution {
                 total = total + beauty;
             }
         }
-        
-        
         return total;
     }
 }
