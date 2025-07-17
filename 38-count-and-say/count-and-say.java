@@ -1,23 +1,20 @@
 class Solution {
     public String countAndSay(int n) {
-        if(n == 1){
-            return "1";
-        }
-        String say = countAndSay(n - 1);
-        StringBuilder result = new StringBuilder();
-        
-        int count = 1;
-        for(int i = 1; i < say.length(); i++){
-            if(say.charAt(i) == say.charAt(i - 1)){
-                count++;
-            } else {
-                result.append(count).append(say.charAt(i - 1));
-                count = 1; // Reset count
+        String res = "1";
+        for (int i = 1; i < n; i++) {
+            StringBuilder temp = new StringBuilder();
+            int count = 1;
+            for (int j = 1; j < res.length(); j++) {
+                if (res.charAt(j) == res.charAt(j - 1)) {
+                    count++;
+                } else {
+                    temp.append(count).append(res.charAt(j - 1));
+                    count = 1;
+                }
             }
+            temp.append(count).append(res.charAt(res.length() - 1));
+            res = temp.toString();
         }
-        // Append the last group
-        result.append(count).append(say.charAt(say.length() - 1));
-        
-        return result.toString();
+        return res;
     }
 }
