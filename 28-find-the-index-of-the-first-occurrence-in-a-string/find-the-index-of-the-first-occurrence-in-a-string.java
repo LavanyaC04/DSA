@@ -5,7 +5,7 @@ class Solution {
         for (int i = 0; i <= n - m; i++) {
             if(haystack.charAt(i) == needle.charAt(0)){
                 if (haystack.substring(i, i + m).equals(needle)) {
-                return i;
+                    return i;
                 }
             }
         }
