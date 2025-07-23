@@ -11,7 +11,6 @@
 
 class Solution {
     public ListNode oddEvenList(ListNode head) {
-        // Dummy nodes for odd and even lists
         if(head == null || head.next == null) return head;
         ListNode odd = head, even = head.next, evenHead = even;
         while(even!=null && even.next != null){
